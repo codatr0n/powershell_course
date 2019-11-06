@@ -32,12 +32,6 @@ Out-Printer
 
 # 3. Hvor mange cmdlets findes der til håndtering af processer? (Husk, navngivningskonventionen for cmdlets bruger engelske navneord i ental).
 Get-Command -noun process
-# output: 
-# Debug-Process
-# Get-Process
-# Start-Process
-# Stop-Process
-# Wait-Process
 
 # 4. Hvilken cmdlet kunne man bruge til at skrive til en eventlog?
 Get-Command -noun EventLog
