@@ -36,11 +36,13 @@ Get-Date | Select-Object -ExpandProperty DayOfWeek
 #Ekstra opgaver:
 # 1. Hvordan kan man fortælle Stop-Service, hvilke(n) service(s), man vil stoppe, ud over ved at
 # bruge Get-Service.
+Stop-Service -name Fax
 
 # 2. Hvordan ændrer man separator-tegnet i Export-CSV?
 Get-Service | Export-Csv -path "services.csv" -Delimiter ";"
 
 # 3. Hvordan fjerner man den første linje med kolonneinformation fra output fra Export-CSV?
+export-csv -NoTypeInformation
 
 # 4. Find en cmdlet, der frembringer et ”tilfældigt” tal.
 Get-Random -Minimum 1 -Maximum 10
